@@ -1,0 +1,161 @@
+ *{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box; 
+}
+
+.container{
+    width: 100%;
+    min-height: 100vh;
+    background: url(/imagenes/alta\ calidad.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    background-size: cover;
+    padding: 20px;
+    
+   }
+   .todo-app{
+    width: 100%;
+    max-width: 540px;
+    background: #adaba2;
+    margin: 100px auto 20px;
+    padding: 40px 30px 70px;
+    border-radius: 10px;
+   }
+   .todo-app img {
+    width: 70px;
+    margin-left: 30px;
+    position: relative;
+    top: 0px;
+   }
+
+   .todo-app h2{
+    color: #000;
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+   }
+ 
+   #deletebtn{
+    border: none;
+    outline: none;
+    padding: 16px 20px;
+    background: #474B4E;
+    color: #fff;
+    font-size: 16px;
+    position: absolute;
+    right: 200px;
+    top: 24%;
+    transform: translateY(-50%);
+    background-color: gray;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 20px;
+    cursor: pointer;
+    
+   }
+.row{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #000;
+    border-radius: 30px;
+    padding-left: 20px;
+}
+input{
+    flex: 1;
+    border: none;
+    outline: none;
+    background: transparent;
+    padding: 10px;
+    font-family: Arial, sans-serif;
+    color: #fff;
+}
+#input-box {
+    transition: opacity 0.5s ease-in-out;
+}
+#botonAñadir{
+    border: none;
+    outline: none;
+    padding: 16px 50px;
+    background: #474B4E;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 40px;
+}
+ul li{
+    position: relative;
+    list-style: none;
+    font-size: 17px;
+    padding: 15px 50px 15px 50px;
+    user-select: none;
+    cursor: pointer;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    max-width: 100%;
+    white-space: normal;
+    display: block;
+
+}
+ul li::before{
+  content: '';
+  position: absolute;
+  height: 20px;
+  width: 36px;
+  border-radius: 50%;
+  background-image: url(/imagenes/boton\ before.png);
+  background-size: cover;
+  background-position: center;
+  top : 12px;
+  left: 8px;
+}
+ul li.checked{
+    color: #555;
+    text-decoration: line-through;
+}
+
+ul li.checked::before{
+    background-image: url(/imagenes/boton\ after.png);
+}
+ul li span{
+  position: absolute;
+  right: 0;
+  top: 5px;
+  width: 40px;
+  height: 40px;
+ font-size: 22px;
+  color: #555;
+  line-height: 40px;
+  text-align: center;
+  border-radius: 50%;
+}
+
+ul li span:hover{
+    background: #7a848b;
+}
+
+ul {
+    width: 475px;
+    height: 200px;
+    overflow-y: auto;
+    scroll-behavior: smooth;
+}
+ul::-webkit-scrollbar{
+    width: 10px;
+
+}
+
+ul::-webkit-scrollbar-track{
+    background: #adaba2;
+    border: 2.5px solid #000;
+    border-radius: 10px;
+}
+
+ul::-webkit-scrollbar-thumb{
+    background: linear-gradient(#FFFF00, #000);
+    border-radius: 10px;
+} 
